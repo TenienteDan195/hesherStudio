@@ -4,8 +4,7 @@
 }
 
 body{
-    background: rgb(15,62,107);
-    background: radial-gradient(circle, rgba(15,62,107,1) 0%, rgba(0,0,0,1) 100%);
+        background-color: black;
 }
 
 .menu{
@@ -16,38 +15,70 @@ body{
 
 .menu nav{
     display: flex;
-    background-color: rgb(187, 187, 187);
     justify-content: center;
-    border-radius: 50px;
-    margin-right: 40px;
-    margin-top: 10px;
-    box-shadow: 0 3px 6px 0 rgba(255, 255, 255, 0.20);
-    
+    transition: all (step-start);
 }
 
 nav a{
-    color:black;
+    color:white;
     text-decoration: none;
 }
 
 nav a p{
     padding: 20px;
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 
-.baner img{
+.baner{
     width: 100%;
-    
 }
 
-article{
-    margin-top: 40px;
+.baner .logo{
     display: flex;
     justify-content: center;
+    margin: 20px;
 }
 
-article .candybox2{
+.mid{
+    
+    margin-top:  40px; 
+    width: 100%;
+}
+
+.mid .images{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mid .images img{
+    width: 480px;
+    height: 360px;
+}
+
+.mid p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
     color: white;
 }
+@media screen and (max-width:1280px) {
+        .mid .images{
+        }
+        
+        .mid .images img{
+            width: 360px;
+            height: 280px;
+        }
+        
+        .mid p{
+            font-family: 'Poppins', sans-serif;
+            font-size: 40px;
+            color: white;
+    }
+}
+
+
+
