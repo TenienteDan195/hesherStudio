@@ -2,82 +2,84 @@
     padding: 0;
     margin: 0;
 }
+:root{
+    --primario: #F1F1F1;
+    --secundario: #E2DCC8;
+    --Relleno: #100F0F;
+    --verde: #0F3D3E;
+}
 
 body{
-        background-color: black;
+    background-color: var(--secundario);
 }
 
-.menu{
+header{
     width: 100%;
-    display: flex;
-    justify-content:center;
+    position: fixed;
+			display: flex;
+			justify-content: space-around;
+			transition: 0.7s;
+            z-index: 10;
+
 }
 
-.menu nav{
+header.abajo{
+    background: var(--Relleno);}
+
+header nav{
     display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+header nav ul{
+    width: 300px;
+    margin: 30px;
+    padding: 10px;
+    background-color: #100F0F;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+header nav ul li{
+    display: inline-flex;
     justify-content: center;
-    transition: all (step-start);
+    color: var(--primario);
 }
 
-nav a{
-    color:white;
+header nav ul li a{
+    position: relative;
     text-decoration: none;
+    color: var(--primario);
 }
 
-nav a p{
-    padding: 20px;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-}
 
 .baner{
     width: 100%;
+    height: 500px;
+    display: flex;
 }
 
 .baner .logo{
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin: 20px;
-}
-
-.mid{
-    
-    margin-top:  40px; 
-    width: 100%;
-}
-
-.mid .images{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
     align-items: center;
 }
 
-.mid .images img{
-    width: 480px;
-    height: 360px;
+
+.background-2{
+    width: 100%;
+    height: 500px;
+    background-color: var(--Relleno);
 }
 
-.mid p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    color: white;
-}
-@media screen and (max-width:1280px) {
-        .mid .images{
-        }
-        
-        .mid .images img{
-            width: 360px;
-            height: 280px;
-        }
-        
-        .mid p{
-            font-family: 'Poppins', sans-serif;
-            font-size: 40px;
-            color: white;
-    }
+.background-3{
+    background-color: var(--secundario);
+    width: 100%;
+    height: 500px ;
 }
 
 
