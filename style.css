@@ -7,6 +7,8 @@
     --secundario: #E2DCC8;
     --Relleno: #100F0F;
     --verde: #0F3D3E;
+    font-family: 'poppins', sans-serif;
+    
 }
 
 body{
@@ -21,6 +23,26 @@ header{
 			transition: 0.7s;
             z-index: 10;
 
+}
+
+header .name a{
+    display: none;
+}
+
+header.abajo .name a{
+    display: flex;
+    color: var(--primario);
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 200;
+
+}
+
+header .name{
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    align-items: center;
 }
 
 header.abajo{
@@ -53,6 +75,7 @@ header nav ul li a{
     position: relative;
     text-decoration: none;
     color: var(--primario);
+    font-weight: 200;
 }
 
 
